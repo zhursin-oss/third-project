@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9fbfc;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: linear-gradient(to right, #00c6a9, #00d9c0);
+    color: white;
+    animation: fadeSlideDown 1s ease-out;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+  .content {
+    padding: 3rem 2rem;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in;
+  }
+  
+  .intro h2 {
+    font-size: 2rem;
+    color: #00a58d;
+    margin-bottom: 1rem;
+  }
+  
+  .intro p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    background-color: #00a58d;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0, 165, 141, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #008d78;
+    transform: scale(1.05);
+  }
+  
+  footer {
+    background-color: #eef3f5;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    position: relative;
+  }
+  
+  .socials {
+    margin-top: 1.5rem;
+  }
+  
+  .social-icon {
+    font-size: 2rem;
+    color: #333;
+    margin: 0 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #00a58d;
+    transform: scale(1.2);
+  }
+  
+  .instagram-feed {
+    display: none;
+    margin-top: 3rem;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeInFeed 1.5s ease-in;
+  }
+  
+  .instagram-feed iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+  }
+  
+  /* Animations */
+  @keyframes fadeSlideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeInFeed {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
